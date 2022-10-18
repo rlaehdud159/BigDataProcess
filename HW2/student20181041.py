@@ -52,11 +52,11 @@ for row in ws:
     if(sum_v >= aplus):
       grade = 'A+'
     elif(sum_v >= a):
-      grade = 'A'
+      grade = 'A0'
     elif(sum_v >= bplus)
       grade = 'B+'
     elif(sum_v >= b)
-      grade = 'B'
+      grade = 'B0'
     elif(sum_v >= cplus)
       grade = 'C+'
    
