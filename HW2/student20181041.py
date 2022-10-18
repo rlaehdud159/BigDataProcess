@@ -53,11 +53,11 @@ for row in ws:
       grade = 'A+'
     elif(sum_v >= a):
       grade = 'A0'
-    elif(sum_v >= bplus)
+    elif(sum_v >= bplus):
       grade = 'B+'
-    elif(sum_v >= b)
+    elif(sum_v >= b):
       grade = 'B0'
-    elif(sum_v >= cplus)
+    elif(sum_v >= cplus):
       grade = 'C+'
    
     ws.cell(row = row_id, column = 8).value = grade
