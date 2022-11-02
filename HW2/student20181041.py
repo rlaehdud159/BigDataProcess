@@ -30,18 +30,18 @@ for x in range(2, ws.max_row + 1):
   count += 1
 
 #grade 계산
-a_count = count * 0.3
+a_count = int(count * 0.3)
 a = sum_sort_list[a_count - 1]
-aplus_count = a_count * 0.5
+aplus_count = int(a_count * 0.5)
 aplus = sum_sort_list[aplus_count - 1]
 
-b_count = count * 0.7
+b_count = int(count * 0.7)
 b = sum_sort_list[b_count - 1]
-bplus_count = a_count + (b_count - a_count) * 0.5
+bplus_count = int(a_count + (b_count - a_count) * 0.5)
 bplus = sum_sort_list[bplus_count - 1]
 
-cplus_count = b_count + (count * 0.3 * 0.5)
-cplus = sum_sort[cplus_count - 1]
+cplus_count = int(b_count + (count * 0.3 * 0.5))
+cplus = sum_sort_list[cplus_count - 1]
 
 row_id = 1
 for row in ws:
@@ -52,12 +52,12 @@ for row in ws:
     if(sum_v >= aplus):
       grade = 'A+'
     elif(sum_v >= a):
-      grade = 'A'
-    elif(sum_v >= bplus)
+      grade = 'A0'
+    elif(sum_v >= bplus):
       grade = 'B+'
-    elif(sum_v >= b)
-      grade = 'B'
-    elif(sum_v >= cplus)
+    elif(sum_v >= b):
+      grade = 'B0'
+    elif(sum_v >= cplus):
       grade = 'C+'
    
     ws.cell(row = row_id, column = 8).value = grade
